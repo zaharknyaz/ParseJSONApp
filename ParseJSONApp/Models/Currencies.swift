@@ -8,5 +8,10 @@
 struct Currency: Decodable {
     let id: String?
     let name: String?
-    let min_size: Float?
+    let min_size: String?
 }
+
+struct CurrenciesInfo: Decodable {
+    let data: [Currency]
+}
+

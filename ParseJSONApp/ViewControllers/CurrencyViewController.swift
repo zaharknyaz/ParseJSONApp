@@ -27,7 +27,7 @@ extension CurrencyViewController {
             }
             
             do {
-                let currency = try JSONDecoder().decode(Currency.self, from: data)
+                let currency = try JSONDecoder().decode(CurrenciesInfo.self, from: data)
                 print(currency)
             } catch let error {
                 print(error)
